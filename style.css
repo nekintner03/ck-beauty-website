@@ -1,0 +1,236 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 1rem;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section.light {
+  background: #fff4f0; /* soft peach background */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+/* Header layout */
+.site-header {
+  display: flex;
+  justify-content: space-between; /* brand on left, nav on right */
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: #f9b7a9; /* soft peach background */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Business name */
+.brand-name {
+  font-family: 'Cormorant Garamond', serif; /* elegant serif */
+  font-size: 4rem;   /* larger for desktop */
+  font-weight: bold;
+  color: black;    /* brand peach color */
+  margin: 0;
+}
+
+/* Navigation links */
+.site-nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.site-nav a:hover {
+  color: #f9b7a9; /* brand color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-name {
+    font-size: 3rem; /* smaller for mobile */
+    margin-bottom: 1rem;
+  }
+
+  .site-nav a {
+    margin: 0.5rem 1rem;
+  }
+}
+
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 160px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin-left: 20px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffeae2; /* lighter peach hover */
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal halves */
+  height: 100vh;
+  background: #fff4f0; /* soft peach background instead of image overlay */
+}
+
+.hero-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills space without stretching */
+  object-position: center;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  color: #333;
+}
+
+.hero-right h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-right p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #f9b7a9;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #333;
+  color: white;
+}
+
+/* Responsive: stack image on top for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .hero-left img {
+    height: 50vh;
+  }
+
+  .hero-right {
+    align-items: center;
+    text-align: center;
+  }
+}
+/* Services */
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Portfolio Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto 0;
+}
+
+form input, form textarea, form button {
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form input, form textarea {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+form button {
+  background: #f9b7a9;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #333;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
